@@ -1,0 +1,12 @@
+{
+    "mcp.servers": {
+        "rss-news": {
+            "command": "node",
+            "args": [
+                "node_modules/tsx/dist/cli.mjs",
+                "src/index.ts"
+            ],
+            "cwd": "C:\\Users\\site laptop2\\Desktop\\RSSMCP Sonyeni\\RSSMCP"
+        }
+    }
+}
