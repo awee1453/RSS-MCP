@@ -1,0 +1,14 @@
+{
+    "_comment": "Claude Desktop MCP Config - HTTP Transport",
+    "_location_macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
+    "_location_windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
+    "_instructions": "First start the RSS-MCP server with: npm run start:http",
+    "mcpServers": {
+        "rss-news": {
+            "transport": {
+                "type": "http",
+                "url": "http://localhost:3000/mcp"
+            }
+        }
+    }
+}

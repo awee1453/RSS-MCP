@@ -1,0 +1,23 @@
+{
+    "_comment": "VS Code / GitHub Copilot MCP Configuration",
+    "_location": ".vscode/mcp.json or User Settings (settings.json)",
+    "_instructions": "For STDIO: Replace YOUR_RSS_MCP_PATH. For HTTP: First run 'npm run start:http'",
+    "servers": {
+        "rss-news-stdio": {
+            "type": "stdio",
+            "command": "node",
+            "args": [
+                "node_modules/tsx/dist/cli.mjs",
+                "src/index.ts"
+            ],
+            "cwd": "YOUR_RSS_MCP_PATH",
+            "env": {
+                "MCP_TRANSPORT": "stdio"
+            }
+        },
+        "rss-news-http": {
+            "type": "http",
+            "url": "http://localhost:3000/mcp"
+        }
+    }
+}

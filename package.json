@@ -1,0 +1,72 @@
+{
+  "name": "rss-news-mcp",
+  "version": "3.0.0",
+  "description": "Professional RSS News MCP Tool - Feed aggregation and analysis server",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "dev:http": "MCP_TRANSPORT=http tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "start:http": "MCP_TRANSPORT=http tsx src/index.ts",
+    "auto-start": "npm update && npm start",
+    "auto-start:http": "npm update && npm run start:http",
+    "quick-start": "npm install && npm start",
+    "setup": "npm install && echo Setup tamamlandı!",
+    "update-deps": "npm update && npm outdated",
+    "build": "tsc",
+    "clean": "rimraf dist data"
+  },
+  "keywords": [
+    "mcp",
+    "rss",
+    "news",
+    "feed",
+    "aggregator",
+    "model-context-protocol"
+  ],
+  "author": "awee1453",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awee1453/RSS-MCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/awee1453/RSS-MCP/issues"
+  },
+  "homepage": "https://github.com/awee1453/RSS-MCP#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.7.9",
+    "cheerio": "^1.1.2",
+    "cron-parser": "^5.4.0",
+    "csv-writer": "^1.6.0",
+    "express": "^4.21.2",
+    "fast-xml-parser": "^5.3.2",
+    "natural": "^8.0.1",
+    "node-cron": "^4.2.1",
+    "rss-parser": "^3.13.0",
+    "sentiment": "^5.0.2",
+    "string-similarity": "^4.0.4",
+    "xmlbuilder2": "^4.0.3",
+    "zod": "^3.24.1"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "^11.7.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@types/natural": "^6.0.1",
+    "@types/node": "^22.10.2",
+    "@types/node-cron": "^3.0.11",
+    "@types/sentiment": "^5.0.4",
+    "@types/string-similarity": "^4.0.2",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

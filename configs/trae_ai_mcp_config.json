@@ -1,0 +1,17 @@
+{
+    "_comment": "Trae AI MCP Configuration",
+    "_instructions": "Add via Trae AI Settings > AI Management > MCP. Replace YOUR_RSS_MCP_PATH with your actual path.",
+    "mcpServers": {
+        "rss-news": {
+            "command": "node",
+            "args": [
+                "node_modules/tsx/dist/cli.mjs",
+                "src/index.ts"
+            ],
+            "cwd": "YOUR_RSS_MCP_PATH",
+            "env": {
+                "MCP_TRANSPORT": "stdio"
+            }
+        }
+    }
+}

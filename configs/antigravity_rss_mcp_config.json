@@ -1,0 +1,18 @@
+{
+    "_comment": "Antigravity AI MCP Configuration",
+    "_location": "~/.gemini/antigravity/mcp_config.json",
+    "_instructions": "Replace YOUR_RSS_MCP_PATH with your actual RSS-MCP installation path",
+    "mcpServers": {
+        "rss-news": {
+            "command": "node",
+            "args": [
+                "node_modules/tsx/dist/cli.mjs",
+                "src/index.ts"
+            ],
+            "cwd": "YOUR_RSS_MCP_PATH",
+            "env": {
+                "MCP_TRANSPORT": "stdio"
+            }
+        }
+    }
+}

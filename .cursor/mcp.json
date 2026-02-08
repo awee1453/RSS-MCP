@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "rss-news": {
+      "command": "node",
+      "args": [
+        "node_modules/tsx/dist/cli.mjs",
+        "src/index.ts"
+      ],
+      "cwd": "/path/to/RSS-MCP"
+    }
+  }
+}

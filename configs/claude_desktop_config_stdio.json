@@ -1,0 +1,19 @@
+{
+    "_comment": "Claude Desktop MCP Config - STDIO Transport (Explicit)",
+    "_location_macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
+    "_location_windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
+    "_instructions": "Replace YOUR_RSS_MCP_PATH with your actual RSS-MCP installation path",
+    "mcpServers": {
+        "rss-news": {
+            "command": "node",
+            "args": [
+                "node_modules/tsx/dist/cli.mjs",
+                "src/index.ts"
+            ],
+            "cwd": "YOUR_RSS_MCP_PATH",
+            "env": {
+                "MCP_TRANSPORT": "stdio"
+            }
+        }
+    }
+}

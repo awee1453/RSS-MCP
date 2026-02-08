@@ -1,0 +1,19 @@
+{
+    "_comment": "Cursor IDE MCP Configuration",
+    "_location_project": ".cursor/mcp.json (project-specific)",
+    "_location_global": "~/.cursor/mcp.json (global)",
+    "_instructions": "Replace YOUR_RSS_MCP_PATH with your actual RSS-MCP installation path. Enable in Cursor Settings > MCP section.",
+    "mcpServers": {
+        "rss-news": {
+            "command": "node",
+            "args": [
+                "node_modules/tsx/dist/cli.mjs",
+                "src/index.ts"
+            ],
+            "cwd": "YOUR_RSS_MCP_PATH",
+            "env": {
+                "MCP_TRANSPORT": "stdio"
+            }
+        }
+    }
+}
